@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 500px;
+            margin: 20px;
+            background-color: antiquewhite;
+        }
+        .block{
+            height: 200px;
+            width: 200px;
+            top: 100px;
+            left: 100px;
+            background-color: aquamarine;
+            position: sticky;
+        }
+        .parent{
+            height: 130vh;
+            width: 500px;
+            margin: 20px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            top: 100px;
+            left: 100px;
+            background-color: aquamarine;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <p>Position: sticky</p>
+    <div class="container">
+        <div class="block"></div>
+    </div>
+    <p>Position: absolute & relative</p>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
