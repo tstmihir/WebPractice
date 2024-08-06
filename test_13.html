@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* id has higher priority than class in !important */
+      #myid {
+        background-color: aquamarine !important;
+        height: 50px;
+        color: white;
+        text-shadow: 1px 1px 4px red;
+      }
+
+      .myclass {
+        background-color: gray !important;
+      }
+
+      #div1 {
+        left: 50px;
+        width: calc(
+          100% - 100px
+        ); /* adds space on both sides of 50px from the 100% width */
+        border: 1px solid black;
+        background-color: yellow;
+        padding: 5px;
+        margin: 20px;
+      }
+
+      #div2 {
+        background-color: yellow;
+        height: 100px;
+        width: min(50%, 30%); /* selects the minimum value for property, opposite for max */
+        box-shadow: 5px 5px 5px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="myclass" id="myid">This is a test paragraph</h2>
+    <div id="div1">Some text...</div>
+
+    <div id="div2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+      dignissimos soluta recusandae officia. Quisquam illum magnam numquam rem
+      officiis. Architecto reprehenderit nesciunt possimus, voluptatibus
+      dignissimos tempore eius culpa qui debitis.
+    </div>
+  </body>
+</html>
