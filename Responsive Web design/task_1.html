@@ -26,6 +26,23 @@
         width: 100%;
         z-index: 1;
       }
+      .navbar a{
+        position: relative;
+      }
+      .navbar span{
+        position: absolute;
+        bottom: 70%;
+        left: 60%;
+        background-color:black;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        padding: 8px;
+        display: inline-block;
+        font-size: 0.7rem;
+        text-align: center;
+      }
       ul {
         display: flex;
         justify-content: flex-end;
@@ -131,6 +148,12 @@
         text-align: left;
         border-radius: 0px 0px 10px 10px;
        }
+       .card-image span{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-weight: bold;
+       }
        .card-para p{
         color: white;
         font-size: 1.2rem;
@@ -148,7 +171,6 @@
         font-size: 1.2rem;
         font-weight: bold;
       }
-
       @media only screen and (max-width: 500px) {
         ul {
           display: flex;
@@ -169,6 +191,9 @@
           height: 40px;
           padding: 10px;
           font-size: 1rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .search-btn {
           bottom: 10%;
@@ -202,7 +227,7 @@
       <nav class="navbar">
         <ul>
           <li>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>1</span></a>
           </li>
           <li><a href="#">Home</a></li>
           <li class="contact-li"><a href="#">Contact Us</a></li>
@@ -229,6 +254,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>1</span>
               <img src="/image 1.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -242,6 +268,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>2</span>
               <img src="/image 2.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -255,6 +282,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>3</span>
               <img src="/image 1.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -268,6 +296,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>4</span>
               <img src="/image 2.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -281,6 +310,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>5</span>
               <img src="/image 1.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -294,6 +324,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>6</span>
               <img src="/image 2.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -307,6 +338,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>7</span>
               <img src="/image 1.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -320,6 +352,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>8</span>
               <img src="/image 2.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -333,6 +366,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>9</span>
               <img src="/image 1.png" alt="card-img">
             </div>
             <div class="card-para">
@@ -346,6 +380,7 @@
         <div class="card">
           <div class="card-content">
             <div class="card-image">
+              <span>10</span>
               <img src="/image 2.png" alt="card-img">
             </div>
             <div class="card-para">
