@@ -13,6 +13,7 @@ document.querySelector("button").addEventListener("click", function () {
   const rows = text.split("\n");
 
   for (const [i, row] of rows.entries()) {
+    console.log(i, row);
     const [first, second] = row.toLowerCase().trim().split("_");
     const output = `${first}${second.replace(
       second[0],
